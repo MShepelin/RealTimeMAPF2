@@ -1,5 +1,5 @@
-#include "MovesSegments.h"
 #include "Shapes.h"
+#include "MovesSegments.h"
 
 ArrayType<FPoint> FShape::ApplyShapeTo(FPoint Point) const
 {
