@@ -76,6 +76,7 @@ std::unordered_map<FPoint, Segment> GetTouchedSegments(const MoveDelta<FPoint>& 
 
     const FVector2D StartPoint = { 0.5, 0.5 };
     std::unordered_map<FPoint, Segment> PositiveResult;
+    SetLineTimings(PositiveResult, Speed, StartPoint - ShapeDelta / 2);
     SetLineTimings(PositiveResult, Speed, StartPoint + ShapeDelta / 2);
     SetLineTimings(PositiveResult, Speed, StartPoint + FVector2D(ShapeDelta.X, -ShapeDelta.Y) / 2);
     SetLineTimings(PositiveResult, Speed, StartPoint + FVector2D(-ShapeDelta.X, ShapeDelta.Y) / 2);
